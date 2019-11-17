@@ -104,8 +104,8 @@ h6 {
 }
 
 #main-nav .social {
-    justify-self: center;
-
+    display:flex;
+justify-content: center;
 }
 
 #main-nav .social i {
@@ -290,4 +290,86 @@ h6 {
 .bg-secondary h3,
 .bg-secondary a {
     color: #fff;
+}
+
+
+/* footer */
+#main-footer {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+#main-footer img {
+    width: 100px;
+}
+
+#main-footer a {
+    color: #fff;
+}
+
+#main-footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container>*:last-child {
+    background: #444;
+    grid-column: 1/ span 4;
+    padding: .5rem;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+/* ICONS */
+.social_icon{
+    display: block;
+    height: 18px;
+    width:18px;
+}
+.flex-container {
+    display: flex;
+}
+
+.social_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    /* height: 80px; */
+    margin-right: -10px;
+}
+
+.icon {
+    display: block;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s ease;
+    border-radius: 18px;
+    opacity: 0.8;
+
+}
+
+.icon:hover {
+    opacity: 1;
+}
+
+.icon_inst:hover {
+    background: linear-gradient(to bottom, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #FCAF45, #FFDC80);
+    /* background: black; */
+
+}
+
+.icon_twit:hover {
+    fill: black;
+    background: blue;
+}
+
+.icon_youtube:hover {
+    fill: red;
+}
+
+.icon_facebook:hover {
+    fill: blue;
+    background: #000;
 }
