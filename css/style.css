@@ -8,7 +8,7 @@
 
 .category {
     --sports-color: #f99500;
-    --end-color: #a66bbe;
+    --ent-color: #a66bbe;
     --tech-color: #009cff;
 }
 
@@ -57,13 +57,15 @@ h6 {
     margin: auto;
     padding: 0 2rem;
     overflow: hidden;
+}
+
+/*Navigation менюшечка в топе */
+#main-nav .container {
     display: grid;
     grid-template-columns: 6fr 3fr 2fr;
     padding: 1rem;
     align-items: center;
 }
-
-/*Navigation менюшечка в топе */
 
 #main-nav {
     background-color: #fff;
@@ -109,4 +111,183 @@ h6 {
 #main-nav .social i {
     color: #777;
     margin-right: .5rem;
+}
+
+
+/* Showcase  */
+
+#showcase {
+    color: #ffff;
+    background: #333;
+    padding: 3rem;
+    position: relative;
+}
+
+#showcase:before {
+    content: '';
+    background: url(../img/featured.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+#showcase .showcase-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    /* grid-gap: 1rem; */
+}
+
+#showcase .showcase-content {
+    z-index: 1;
+}
+
+#showcase .showcase-content p {
+    margin-bottom: 1rem;
+}
+
+
+.category {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+}
+
+.category-sports {
+    background: var(--sports-color);
+}
+
+.category-ent {
+    background: var(--ent-color);
+}
+
+.category-tech {
+    background: var(--sports-tech);
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: var(--dark-color);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+
+}
+
+.btn-light {
+    background: var(--light-color);
+}
+
+.btn-primary {
+    background: var(--primary-color);
+}
+
+.btn-secondary {
+    background: var(--secondary-color);
+}
+
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    background: #fff;
+    padding: 1rem;
+}
+
+
+/* hoome articles */
+#home-articles .articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#home-articles .articles-container>*:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-column: 1/ span 2;
+    align-items: center;
+}
+
+
+#home-articles .articles-container>*:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-column: 2/ span 2;
+    align-items: center;
+}
+
+
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.py-1 {
+    padding: 1.5rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+    color: #fff;
 }
