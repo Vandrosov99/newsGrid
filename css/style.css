@@ -319,8 +319,30 @@ justify-content: center;
     padding: .5rem;
     text-align: center;
     font-size: 0.75rem;
+     
+}
+#main-footer .footer-container input[type="email"]{
+    width:90%;
+    padding:0.5rem;
+    margin-bottom:0.5rem; 
+}
+#main-footer .footer-container input[type="submit"]{
+    width:90%;
 }
 
+p{
+    margin:.5rem;
+}
+
+.list li{
+padding: .5rem 0;
+border-bottom:#555 1px dotted;
+width:90%;
+}
+
+.list li a:hover {
+    color:var(--primary-color) !important;
+}
 /* ICONS */
 .social_icon{
     display: block;
